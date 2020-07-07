@@ -1,0 +1,455 @@
+/* Fonts */
+
+@font-face {
+    font-family: "Raleway";
+    src: url(fonts/Raleway-Regular.ttf), url(fonts/Raleway-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(fonts/Montserrat-Regular.ttf), url(fonts/Montserrat-Bold.ttf);
+}
+
+/* général */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 1130px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    background-image: url("../img/background.png");
+    background-size: cover;
+    background-attachment: fixed;
+    /* print */
+    -webkit-print-color-adjust: exact;
+}
+
+#container {
+    width: 800px;
+    height: 1130px;
+    background: linear-gradient(90deg, #dedee0 300px, #efeff1 300px);
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+#container header {
+    margin: 30px 50px 0 50px;
+    padding: 30px 20px;
+    width: 700px;
+    height: 160px;
+    border: solid 2px #45454f;
+    background-color: #efeff1;
+    display: flex;
+    justify-content: space-around;
+}
+
+header img {
+    width: 120px;
+    height: auto;
+    border-radius: 60px;
+    align-self: center;
+}
+
+main {
+    display: flex;
+    height: 920px;
+}
+
+.left {
+    width: 300px;
+    height: 100%;
+    padding: 30px 0 0 0;
+}
+
+.right {
+    width: 500px;
+    height: 100%;
+    padding: 30px;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 2.5em;
+    font-weight: 700;
+    letter-spacing: 10px;
+    color: #45454f;
+    border-bottom: 1px solid #45454f;
+    padding-bottom: 10px;
+    width: 445px;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.4em;
+    color: #45454f;
+    padding-top: 10px;
+    letter-spacing: 2px;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-size: 1.4em;
+    color: #45454f;
+}
+
+h4 {
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 0 0 0 30px;
+}
+
+p {
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+strong {
+    font-weight: 700;
+    color: #fb225c;
+}
+
+span {
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+em {
+    float: right;
+    font-style: normal;
+    color: #ff6722;
+    margin-right: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #45454f;
+    transition: 0.5s
+}
+
+a:hover {
+    color: #fb225c;
+}
+
+ul {
+    list-style: none;
+    padding-bottom: 20px;
+    margin-top: -10px;
+}
+
+ul li {
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul li p {
+    padding: 10px 0 10px 30px;
+}
+
+i {
+    font-size: 1.7em;
+    color: #45454f;
+    position: relative;
+    bottom: 32px;
+    left: 240px;
+}
+
+/* border bottom dégradé */
+
+hr {
+    margin: 5px 0 20px 0;
+    height: 1px;
+    border: 0;
+    width: 100%;
+    background: #45454f;
+}
+
+.fade {
+    height: 1.5px;
+    background: linear-gradient(90deg, #fb225c, #fc9712);
+}
+
+/* creation des lignes qui se remplissent */
+
+.line {
+    width: 150px;
+    margin: 0 30px 0 0;
+    background: #dedee0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px 3px rgba(68, 68, 79, 0.5) inset;
+}
+
+.skill {
+    padding: 5px 0;
+    border-radius: 5px;
+    background-image: linear-gradient(90deg, #fc9712, #fb225c);
+}
+
+/* remplissage des lignes */
+
+.html {
+    width: 80%;
+}
+
+.css {
+    width: 70%;
+}
+
+.js {
+    width: 70%;
+}
+
+.php {
+    width: 70%;
+}
+
+.java {
+    width: 80%;
+}
+
+.cpp {
+    width: 60%;
+}
+
+.py {
+    width: 60%;
+}
+
+.jquery {
+    width: 70%;
+}
+
+.bootstrap {
+    width: 80%;
+}
+
+.wordpress {
+    width: 60%;
+}
+
+.git {
+    width: 70%;
+}
+
+.office {
+    width: 60%;
+}
+
+/* partie gauche */
+
+.left h3 {
+    margin: 5px 30px;
+}
+
+.left hr {
+    margin: 0 30px;
+    width: 240px;
+}
+
+/* partie présentation */
+
+#presentation {
+    font-size: 1.15em;
+    font-weight: bold;
+    padding: 0 30px 15px 30px;
+    color: #45454f;
+    text-align: justify;
+}
+
+
+/* contact*/
+
+#contact ul li {
+    padding: 10px 20px 10px 30px;
+    justify-content: left;
+}
+
+#contact ul li i {
+    color: #45454f;
+    position: initial;
+    align-self: center;
+}
+
+
+#contact ul li:nth-child(even) {
+    background-color: #efeff1;
+    width: 102%;
+}
+
+#contact ul li:nth-child(odd) {
+    background-color: #dedee0;
+}
+
+/* compétences */
+
+#competences ul {
+    padding: 15px 0;
+}
+
+#competences ul li {
+    height: 28px;
+}
+
+#competences p {
+    padding-left: 30px;
+}
+
+/* langues */
+#langues i {
+    left: 130px;
+}
+
+.lang {
+    padding: 20px 0 0 30px;
+    float: left;
+}
+
+.lang p {
+    padding-bottom: 10px;
+}
+
+.niv {
+    float: right;
+    padding: 20px 30px 0 0;
+}
+
+.niv p {
+    padding-bottom: 10px;
+}
+
+/* partie droite*/
+
+.right i {
+    left: 410px;
+    bottom: 40px;
+    font-size: 2em;
+}
+
+.right hr {
+    margin: 5px 0;
+}
+
+.right ul {
+    padding: 5px 0 0 0;
+}
+
+.right ul li {
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.right ul li {
+    height: 100%;
+    margin-bottom: 30px;
+}
+
+.right ul li p {
+    padding: 0;
+}
+
+.infos {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.infos p {
+    width: 33%;
+}
+
+.infos p:first-child {
+    text-align: center;
+}
+
+.infos p:last-child {
+    text-align: right;
+}
+
+/* formation */
+
+#formation .infos p {
+    width: 50%;
+}
+
+#formation .infos p:first-child {
+    text-align: left;
+}
+
+/* divers */
+
+#divers ul {
+    padding-top: 0;
+}
+
+#divers ul li {
+    display: block;
+    margin: 0;
+    height: 25px;
+}
+
+#divers ul li::before {
+    content: "\2022";
+    color: #fb225c;
+    font-weight: 700;
+    position: relative;
+    top: 3px;
+    font-size: 2em;
+    margin-right: 0.5em;
+}
+
+#divers p {
+    padding-bottom: 10px;
+}
+
+@media print {
+    @page {
+        size: auto;
+        margin: 0;
+    }
+
+    body {
+        height: 99%;
+        page-break-after: always;
+    }
+
+    #container {
+        height: 1127px;
+    }
+
+    .left {
+        height: 920px;
+    }
+}
+
+.print {
+    position: absolute;
+    top: 20px;
+    left: 150px;
+    width: 100px;
+    height: 50px;
+}
+
+.print i {
+    left: 0;
+    bottom: 0;
+    font-size: 3em;
+    color: #45454f;
+    transition: ease-in-out 0.3s;
+}
+
+.print i:hover {
+    color: #fb225c;
+    cursor: pointer;
+}
